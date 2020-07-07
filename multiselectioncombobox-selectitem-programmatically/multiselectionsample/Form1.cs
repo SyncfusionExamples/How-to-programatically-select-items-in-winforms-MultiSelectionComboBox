@@ -17,8 +17,9 @@ namespace multiselectionsample
             InitializeComponent();
             multiSelectionComboBox1.ShowCheckBox = true;
             multiSelectionComboBox1.DataSource = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
-            multiSelectionComboBox1.SelectedItem = multiSelectionComboBox1.Items[4];
 
+            //Set the select item in MultiSelectionComboBox
+            multiSelectionComboBox1.SelectedItem = multiSelectionComboBox1.Items[4];
         }
 
         private void Form1_Load1(object sender, EventArgs e)
