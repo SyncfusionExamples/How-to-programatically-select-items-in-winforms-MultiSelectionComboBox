@@ -21,19 +21,5 @@ namespace multiselectionsample
             //Set the select item in MultiSelectionComboBox
             multiSelectionComboBox1.SelectedItem = multiSelectionComboBox1.Items[4];
         }
-
-        private void Form1_Load1(object sender, EventArgs e)
-        {
-            List<string> tempList = new List<string>();
-            for (int i = 0; i < this.multiSelectionComboBox1.Items.Count; i++)
-            {
-                var value = this.multiSelectionComboBox1.Items[i];
-                if ((value.Equals("Monday") && !tempList.Contains("Monday")) || (value.Equals("Tuesday") && !tempList.Contains("Tuesday")))
-                {
-                    tempList.Add(value.ToString());
-                    this.multiSelectionComboBox1.SelectedItems.Add(value.ToString());
-                }
-            }
-        }
     }
 }
